@@ -14,14 +14,16 @@ body {
     background: #102542;
     padding: 0 40px;
     height: 70px;
-    box-shadow: 0 2px 12px rgba(10,35,66,0.08);
+    box-shadow: 0 2px 12px rgba(10, 35, 66, 0.08);
 }
+
 .logo {
     font-size: 2rem;
     font-weight: 700;
     color: #2e8bc0;
     letter-spacing: 2px;
 }
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -29,6 +31,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .nav-link {
     color: #eaf6fb;
     text-decoration: none;
@@ -38,7 +41,9 @@ body {
     padding: 8px 0;
     border-bottom: 2px solid transparent;
 }
-.nav-link.active, .nav-link:hover {
+
+.nav-link.active,
+.nav-link:hover {
     color: #2e8bc0;
     border-bottom: 2px solid #2e8bc0;
 }
@@ -60,14 +65,15 @@ main {
 }
 
 .hero {
-    background: rgba(16,37,66,0.92);
+    background: rgba(16, 37, 66, 0.92);
     border-radius: 18px;
-    box-shadow: 0 6px 32px rgba(46,139,192,0.10);
+    box-shadow: 0 6px 32px rgba(46, 139, 192, 0.10);
     padding: 48px 36px 36px 36px;
     margin: 40px 0 32px 0;
     max-width: 600px;
     text-align: center;
 }
+
 .hero h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -75,21 +81,25 @@ main {
     margin-bottom: 18px;
     letter-spacing: 1px;
 }
+
 .subtitle {
     font-size: 1.2rem;
     color: #eaf6fb;
     margin-bottom: 18px;
 }
+
 .highlight {
     color: #2e8bc0;
     font-weight: 700;
 }
+
 .badges {
     display: flex;
     gap: 16px;
     justify-content: center;
     margin-top: 10px;
 }
+
 .badge {
     background: #2e8bc0;
     color: #fff;
@@ -98,21 +108,23 @@ main {
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 1px;
-    box-shadow: 0 2px 8px rgba(46,139,192,0.10);
+    box-shadow: 0 2px 8px rgba(46, 139, 192, 0.10);
 }
 
 .page-section {
-    background: rgba(16,37,66,0.92);
+    background: rgba(16, 37, 66, 0.92);
     border-radius: 16px;
-    box-shadow: 0 2px 12px rgba(46,139,192,0.10);
+    box-shadow: 0 2px 12px rgba(46, 139, 192, 0.10);
     padding: 36px 28px;
     margin: 24px 0;
     max-width: 600px;
     text-align: center;
 }
+
 .page-section.hidden {
     display: none;
 }
+
 .page-section h2 {
     color: #2e8bc0;
     font-size: 2rem;
@@ -128,6 +140,7 @@ main {
     gap: 18px;
     align-items: center;
 }
+
 .client-logo {
     display: inline-block;
     width: 36px;
@@ -140,10 +153,22 @@ main {
     background-repeat: no-repeat;
     background-position: center;
 }
-.client-logo.pmc { background-image: url('logos/pmc.png'); }
-.client-logo.ato { background-image: url('logos/ato.png'); }
-.client-logo.services-australia { background-image: url('logos/servicesaustralia.png'); }
-.client-logo.defence { background-image: url('logos/defence.png'); }
+
+.client-logo.pmc {
+    background-image: url('logos/pmc.png');
+}
+
+.client-logo.ato {
+    background-image: url('logos/ato.png');
+}
+
+.client-logo.services-australia {
+    background-image: url('logos/servicesaustralia.png');
+}
+
+.client-logo.defence {
+    background-image: url('logos/defence.png');
+}
 
 footer {
     background: #102542;
@@ -152,6 +177,7 @@ footer {
     text-align: center;
     margin-top: 40px;
 }
+
 .partners {
     display: flex;
     align-items: center;
@@ -160,14 +186,16 @@ footer {
     margin-bottom: 10px;
     flex-wrap: wrap;
 }
+
 .partner-logo {
     height: 36px;
     width: auto;
     background: #fff;
     border-radius: 8px;
     padding: 4px 8px;
-    box-shadow: 0 1px 4px rgba(46,139,192,0.10);
+    box-shadow: 0 1px 4px rgba(46, 139, 192, 0.10);
 }
+
 .copyright {
     font-size: 0.95rem;
     color: #b5d6ea;
@@ -175,24 +203,30 @@ footer {
 }
 
 @media (max-width: 700px) {
-    .hero, .page-section {
+
+    .hero,
+    .page-section {
         padding: 24px 8px;
         max-width: 98vw;
     }
+
     .navbar {
         flex-direction: column;
         height: auto;
         padding: 0 10px;
         gap: 8px;
     }
+
     .nav-links {
         gap: 16px;
     }
+
     .partners {
         gap: 8px;
     }
 }
-    margin-bottom: 4px;
+
+margin-bottom: 4px;
 }
 
 .recipe-desc {
