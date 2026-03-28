@@ -63,7 +63,7 @@ h1 {
     border-radius: 8px;
     margin-bottom: 12px;
     padding: 16px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
     gap: 12px;
 }
 
@@ -85,6 +85,7 @@ h1 {
     transition: color 0.2s;
     user-select: none;
 }
+
 .star-icon.favorite {
     color: #ffd700;
     text-shadow: 0 2px 8px #ffecb3;
