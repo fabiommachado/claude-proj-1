@@ -1,103 +1,197 @@
 body {
-    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #0a2342 0%, #2e8bc0 100%);
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: #eaf6fb;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #102542;
+    padding: 0 40px;
+    height: 70px;
+    box-shadow: 0 2px 12px rgba(10,35,66,0.08);
+}
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2e8bc0;
+    letter-spacing: 2px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 32px;
     margin: 0;
     padding: 0;
 }
-
-.container {
-    max-width: 500px;
-    margin: 40px auto;
-    background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-    padding: 32px 24px 24px 24px;
+.nav-link {
+    color: #eaf6fb;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+}
+.nav-link.active, .nav-link:hover {
+    color: #2e8bc0;
+    border-bottom: 2px solid #2e8bc0;
 }
 
-h1 {
-    text-align: center;
-    color: #ff7e5f;
-    margin-bottom: 24px;
-}
-
-#recipe-form {
+main {
     display: flex;
-    gap: 12px;
-    margin-bottom: 24px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
 }
 
-#recipe-form input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #eee;
-    border-radius: 6px;
-    font-size: 1rem;
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
 }
 
-#recipe-form button {
-    background: #ff7e5f;
+.hero {
+    background: rgba(16,37,66,0.92);
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(46,139,192,0.10);
+    padding: 48px 36px 36px 36px;
+    margin: 40px 0 32px 0;
+    max-width: 600px;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2e8bc0;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+.subtitle {
+    font-size: 1.2rem;
+    color: #eaf6fb;
+    margin-bottom: 18px;
+}
+.highlight {
+    color: #2e8bc0;
+    font-weight: 700;
+}
+.badges {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.badge {
+    background: #2e8bc0;
     color: #fff;
-    border: none;
-    border-radius: 6px;
-    padding: 10px 18px;
+    border-radius: 16px;
+    padding: 6px 18px;
     font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.2s;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(46,139,192,0.10);
 }
 
-#recipe-form button:hover {
-    background: #feb47b;
+.page-section {
+    background: rgba(16,37,66,0.92);
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(46,139,192,0.10);
+    padding: 36px 28px;
+    margin: 24px 0;
+    max-width: 600px;
+    text-align: center;
+}
+.page-section.hidden {
+    display: none;
+}
+.page-section h2 {
+    color: #2e8bc0;
+    font-size: 2rem;
+    margin-bottom: 18px;
 }
 
-#recipe-list {
+.client-list {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-
-.recipe-item {
     display: flex;
-    align-items: flex-start;
-    background: #f9f9f9;
-    border-radius: 8px;
-    margin-bottom: 12px;
-    padding: 16px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-    gap: 12px;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
 }
+.client-logo {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: #eaf6fb;
+    border-radius: 50%;
+    margin-right: 12px;
+    vertical-align: middle;
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.client-logo.pmc { background-image: url('logos/pmc.png'); }
+.client-logo.ato { background-image: url('logos/ato.png'); }
+.client-logo.services-australia { background-image: url('logos/servicesaustralia.png'); }
+.client-logo.defence { background-image: url('logos/defence.png'); }
 
-.star-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0 8px 0 0;
-    margin-right: 4px;
-    outline: none;
+footer {
+    background: #102542;
+    color: #eaf6fb;
+    padding: 24px 0 12px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+.partners {
     display: flex;
     align-items: center;
-    height: 32px;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+.partner-logo {
+    height: 36px;
+    width: auto;
+    background: #fff;
+    border-radius: 8px;
+    padding: 4px 8px;
+    box-shadow: 0 1px 4px rgba(46,139,192,0.10);
+}
+.copyright {
+    font-size: 0.95rem;
+    color: #b5d6ea;
+    margin-top: 8px;
 }
 
-.star-icon {
-    font-size: 1.5rem;
-    color: #ccc;
-    transition: color 0.2s;
-    user-select: none;
+@media (max-width: 700px) {
+    .hero, .page-section {
+        padding: 24px 8px;
+        max-width: 98vw;
+    }
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 0 10px;
+        gap: 8px;
+    }
+    .nav-links {
+        gap: 16px;
+    }
+    .partners {
+        gap: 8px;
+    }
 }
-
-.star-icon.favorite {
-    color: #ffd700;
-    text-shadow: 0 2px 8px #ffecb3;
-}
-
-.recipe-details {
-    flex: 1;
-}
-
-.recipe-name {
-    font-weight: 600;
-    color: #ff7e5f;
     margin-bottom: 4px;
 }
 
