@@ -1,6 +1,6 @@
 // Sample recipes with favorite property
 const sampleRecipes = [
-    { name: "Spaghetti Carbonara", desc: "Classic Italian pasta with eggs, cheese, pancetta, and pepper.", favorite: true },
+    { name: "Spoghetti Carbonara", desc: "Classic Italian pasta with eggs, cheese, pancetta, and pepper.", favorite: true },
     { name: "Chicken Tikka Masala", desc: "Grilled chicken in a creamy spiced tomato sauce.", favorite: false },
     { name: "Avocado Toast", desc: "Toasted bread topped with smashed avocado, salt, and pepper.", favorite: false }
 ];
